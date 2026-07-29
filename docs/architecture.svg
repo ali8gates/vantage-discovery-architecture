@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="40" y="48" font-size="26" font-weight="700" fill="#111827">Semantic Discovery Platform: Reference Architecture</text>
+  <text x="40" y="74" font-size="14" fill="#6b7280">Conceptual view. Generic component names only.</text>
+
+  <!-- Layer bands -->
+  <g fill="#f9fafb" stroke="#e5e7eb">
+    <rect x="40" y="100" width="1120" height="140" rx="10"/>
+    <rect x="40" y="256" width="1120" height="130" rx="10"/>
+    <rect x="40" y="402" width="1120" height="140" rx="10"/>
+    <rect x="40" y="558" width="1120" height="160" rx="10"/>
+  </g>
+  <g font-size="13" font-weight="700" fill="#9ca3af">
+    <text x="56" y="122">1. INGESTION</text>
+    <text x="56" y="278">2. EMBEDDING</text>
+    <text x="56" y="424">3. INDEXING</text>
+    <text x="56" y="580">4. SERVING</text>
+  </g>
+
+  <!-- Ingestion row -->
+  <g stroke="#111827" stroke-width="1.5" fill="#ffffff">
+    <rect x="70" y="140" width="180" height="70" rx="8"/>
+    <rect x="300" y="140" width="180" height="70" rx="8"/>
+    <rect x="530" y="140" width="180" height="70" rx="8"/>
+    <rect x="760" y="140" width="180" height="70" rx="8"/>
+    <rect x="985" y="140" width="150" height="70" rx="8"/>
+  </g>
+  <g font-size="14" fill="#111827" text-anchor="middle">
+    <text x="160" y="170">Catalog Source</text><text x="160" y="190" font-size="12" fill="#6b7280">batch or stream</text>
+    <text x="390" y="170">Write API</text><text x="390" y="190" font-size="12" fill="#6b7280">single record path</text>
+    <text x="620" y="170">Schema Mapping</text><text x="620" y="190" font-size="12" fill="#6b7280">to common schema</text>
+    <text x="850" y="170">Validation</text><text x="850" y="190" font-size="12" fill="#6b7280">reject and report</text>
+    <text x="1060" y="170">Object Store</text><text x="1060" y="190" font-size="12" fill="#6b7280">columnar files</text>
+  </g>
+
+  <!-- Embedding row -->
+  <g stroke="#111827" stroke-width="1.5" fill="#ffffff">
+    <rect x="70" y="296" width="200" height="66" rx="8"/>
+    <rect x="330" y="296" width="170" height="66" rx="8"/>
+    <rect x="530" y="296" width="170" height="66" rx="8"/>
+    <rect x="730" y="296" width="170" height="66" rx="8"/>
+    <rect x="945" y="296" width="190" height="66" rx="8"/>
+  </g>
+  <g font-size="14" fill="#111827" text-anchor="middle">
+    <text x="170" y="324">Model Router</text><text x="170" y="344" font-size="12" fill="#6b7280">provider abstraction</text>
+    <text x="415" y="332">Provider A</text>
+    <text x="615" y="332">Provider B</text>
+    <text x="815" y="332">Provider C</text>
+    <text x="1040" y="324">Vector Output</text><text x="1040" y="344" font-size="12" fill="#6b7280">ids and vectors</text>
+  </g>
+
+  <!-- Indexing row -->
+  <g stroke="#111827" stroke-width="1.5" fill="#ffffff">
+    <rect x="70" y="442" width="200" height="70" rx="8"/>
+    <rect x="330" y="442" width="200" height="70" rx="8"/>
+    <rect x="590" y="442" width="200" height="70" rx="8"/>
+    <rect x="850" y="442" width="285" height="70" rx="8"/>
+  </g>
+  <g font-size="14" fill="#111827" text-anchor="middle">
+    <text x="170" y="472">Orchestrated Workflow</text><text x="170" y="492" font-size="12" fill="#6b7280">scheduled and triggered</text>
+    <text x="430" y="472">Index Build</text><text x="430" y="492" font-size="12" fill="#6b7280">columnar to binary</text>
+    <text x="690" y="472">Merge and Dedupe</text><text x="690" y="492" font-size="12" fill="#6b7280">deletes applied</text>
+    <text x="992" y="472">Versioned Index Set</text><text x="992" y="492" font-size="12" fill="#6b7280">incremental to full rebuild</text>
+  </g>
+
+  <!-- Serving row -->
+  <g stroke="#111827" stroke-width="1.5" fill="#ffffff">
+    <rect x="70" y="600" width="170" height="66" rx="8"/>
+    <rect x="300" y="598" width="190" height="70" rx="8"/>
+    <rect x="300" y="676" width="190" height="30" rx="6"/>
+    <rect x="550" y="598" width="190" height="70" rx="8"/>
+    <rect x="800" y="598" width="180" height="70" rx="8"/>
+    <rect x="1010" y="598" width="125" height="70" rx="8"/>
+  </g>
+  <g font-size="14" fill="#111827" text-anchor="middle">
+    <text x="155" y="630">Client</text><text x="155" y="650" font-size="12" fill="#6b7280">via load balancer</text>
+    <text x="395" y="628">Query Service</text><text x="395" y="648" font-size="12" fill="#6b7280">read path</text>
+    <text x="395" y="696" font-size="12" fill="#6b7280">Management Service</text>
+    <text x="645" y="628">Index Registry</text><text x="645" y="648" font-size="12" fill="#6b7280">what is live</text>
+    <text x="890" y="628">Shard Nodes</text><text x="890" y="648" font-size="12" fill="#6b7280">fan out and rank</text>
+    <text x="1072" y="628">Metadata</text><text x="1072" y="648" font-size="12" fill="#6b7280">store</text>
+  </g>
+
+  <!-- Arrows -->
+  
+  <line x1="250" y1="175" x2="290" y2="175" stroke="#111827" stroke-width="1.6"/><polygon points="298,175 289,170 289,180" fill="#111827"/>
+<line x1="480" y1="175" x2="520" y2="175" stroke="#111827" stroke-width="1.6"/><polygon points="528,175 519,170 519,180" fill="#111827"/>
+<line x1="710" y1="175" x2="750" y2="175" stroke="#111827" stroke-width="1.6"/><polygon points="758,175 749,170 749,180" fill="#111827"/>
+<line x1="940" y1="175" x2="975" y2="175" stroke="#111827" stroke-width="1.6"/><polygon points="983,175 974,170 974,180" fill="#111827"/>
+<line x1="1060" y1="210" x2="1060" y2="246" stroke="#111827" stroke-width="1.6"/><line x1="1060" y1="246" x2="170" y2="246" stroke="#111827" stroke-width="1.6"/><line x1="170" y1="246" x2="170" y2="285" stroke="#111827" stroke-width="1.6"/><polygon points="170,294 165,285 175,285" fill="#111827"/>
+<line x1="270" y1="329" x2="320" y2="329" stroke="#111827" stroke-width="1.6"/><polygon points="328,329 319,324 319,334" fill="#111827"/>
+<line x1="500" y1="329" x2="520" y2="329" stroke="#111827" stroke-width="1.6"/><polygon points="528,329 519,324 519,334" fill="#111827"/>
+<line x1="700" y1="329" x2="720" y2="329" stroke="#111827" stroke-width="1.6"/><polygon points="728,329 719,324 719,334" fill="#111827"/>
+<line x1="900" y1="329" x2="935" y2="329" stroke="#111827" stroke-width="1.6"/><polygon points="943,329 934,324 934,334" fill="#111827"/>
+<line x1="1040" y1="362" x2="1040" y2="392" stroke="#111827" stroke-width="1.6"/><line x1="1040" y1="392" x2="170" y2="392" stroke="#111827" stroke-width="1.6"/><line x1="170" y1="392" x2="170" y2="431" stroke="#111827" stroke-width="1.6"/><polygon points="170,440 165,431 175,431" fill="#111827"/>
+<line x1="270" y1="477" x2="320" y2="477" stroke="#111827" stroke-width="1.6"/><polygon points="328,477 319,472 319,482" fill="#111827"/>
+<line x1="530" y1="477" x2="580" y2="477" stroke="#111827" stroke-width="1.6"/><polygon points="588,477 579,472 579,482" fill="#111827"/>
+<line x1="790" y1="477" x2="840" y2="477" stroke="#111827" stroke-width="1.6"/><polygon points="848,477 839,472 839,482" fill="#111827"/>
+<line x1="992" y1="512" x2="992" y2="548" stroke="#111827" stroke-width="1.6"/><line x1="992" y1="548" x2="645" y2="548" stroke="#111827" stroke-width="1.6"/><line x1="645" y1="548" x2="645" y2="587" stroke="#111827" stroke-width="1.6"/><polygon points="645,596 640,587 650,587" fill="#111827"/>
+<line x1="240" y1="633" x2="290" y2="633" stroke="#111827" stroke-width="1.6"/><polygon points="298,633 289,628 289,638" fill="#111827"/>
+<line x1="490" y1="633" x2="540" y2="633" stroke="#111827" stroke-width="1.6"/><polygon points="548,633 539,628 539,638" fill="#111827"/>
+<line x1="740" y1="633" x2="790" y2="633" stroke="#111827" stroke-width="1.6"/><polygon points="798,633 789,628 789,638" fill="#111827"/>
+<line x1="980" y1="633" x2="1002" y2="633" stroke="#111827" stroke-width="1.6"/><polygon points="1010,633 1001,628 1001,638" fill="#111827"/><line x1="395" y1="668" x2="395" y2="676" stroke="#111827" stroke-width="1.6"/>
+  <text x="40" y="744" font-size="12" fill="#9ca3af">Batch and streaming ingestion converge on one downstream path: one record is one row.</text>
+</svg>
