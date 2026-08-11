@@ -42,6 +42,10 @@ Four layers, each with its own release path.
 - Polling on new files first, with a queue notification path designed in but deferred. Simple path shipped, upgrade path left open.
 - Separate query and management APIs, so customer-facing read traffic and administrative writes could scale and fail independently.
 
+## How this got built
+
+[How I ran this](docs/how-i-ran-this.md) covers the discovery to build sequence, the bar each stage had to clear before the next one started, and who owned what.
+
 ## What I bring to a team
 
 - I can hold the product argument and the system argument in the same conversation, then write down a design that engineering will actually build.
