@@ -46,6 +46,8 @@ Four layers, each with its own release path.
 
 [How I ran this](docs/how-i-ran-this.md) covers the discovery to build sequence, the bar each stage had to clear before the next one started, and who owned what.
 
+[Customer evaluation and sales](docs/customer-evaluation-and-sales.md) covers the other half of the job: what prospects were actually evaluating, what that looked like with real customers, and how a proof of concept moved from a demo to a production decision.
+
 ## What I bring to a team
 
 - I can hold the product argument and the system argument in the same conversation, then write down a design that engineering will actually build.
