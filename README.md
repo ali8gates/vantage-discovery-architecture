@@ -4,6 +4,8 @@ I led product and system architecture for a semantic product discovery platform 
 
 This repository is a public summary of the role I played. It contains no source code, customer data, internal endpoints, or proprietary designs.
 
+The role itself sat across both sides of a deal. I was the person a prospect's technical team dealt with before anything was signed, and the person who stayed in the room after it was, making sure what got sold actually got implemented and actually moved their numbers. Prospect facing and delivery facing were not two separate jobs, they were the same job at different points in the relationship, and that thread runs through everything below: the architecture, the discovery process, and the customer and sales work.
+
 ## What I owned
 
 - Product definition for search and discovery: what a retailer could ask of their own catalog, and what the platform had to return to be worth switching for.
@@ -47,6 +49,8 @@ Four layers, each with its own release path.
 [How I ran this](docs/how-i-ran-this.md) covers the discovery to build sequence, the bar each stage had to clear before the next one started, and who owned what.
 
 [Customer evaluation and sales](docs/customer-evaluation-and-sales.md) covers the other half of the job: what prospects were actually evaluating, what that looked like with real customers, and how a proof of concept moved from a demo to a production decision.
+
+[Running discovery with a customer](docs/discovery-workshops-and-roadmap.md) covers the workshops themselves: getting in early with a prospect, mapping their current state, stakeholders, and constraints, choosing what to land first, and setting success criteria before delivery started.
 
 ## What I bring to a team
 
