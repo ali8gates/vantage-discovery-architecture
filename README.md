@@ -6,6 +6,16 @@ This repository is a public summary of the role I played. It contains no source 
 
 The role itself sat across both sides of a deal. I was the person a prospect's technical team dealt with before anything was signed, and the person who stayed in the room after it was, making sure what got sold actually got implemented and actually moved their numbers. Prospect facing and delivery facing were not two separate jobs, they were the same job at different points in the relationship, and that thread runs through everything below: the architecture, the discovery process, and the customer and sales work.
 
+## Where to start
+
+The architecture below is the foundation, but the discovery and sales side of the job is where most of my actual time went, and it is where the harder judgment calls lived.
+
+- [Running discovery with a customer](docs/discovery-workshops-and-roadmap.md), the workshops themselves: getting in early with a prospect, mapping their current state, stakeholders, and constraints, choosing what to land first, and setting success criteria before delivery started.
+- [Customer evaluation and sales](docs/customer-evaluation-and-sales.md), what prospects were actually evaluating, what that looked like with real customers, and how a proof of concept moved from a demo to a production decision.
+- [How I ran this](docs/how-i-ran-this.md), the discovery to build sequence on the architecture side, the bar each stage had to clear, and who owned what.
+
+The rest of this page is the architecture and build detail those pages reference.
+
 ## What I owned
 
 - Product definition for search and discovery: what a retailer could ask of their own catalog, and what the platform had to return to be worth switching for.
@@ -43,14 +53,6 @@ Four layers, each with its own release path.
 - Cadence-based index versioning instead of one mutable index, which made deletes, backfills, and rollbacks routine rather than incidents.
 - Polling on new files first, with a queue notification path designed in but deferred. Simple path shipped, upgrade path left open.
 - Separate query and management APIs, so customer-facing read traffic and administrative writes could scale and fail independently.
-
-## How this got built
-
-[How I ran this](docs/how-i-ran-this.md) covers the discovery to build sequence, the bar each stage had to clear before the next one started, and who owned what.
-
-[Customer evaluation and sales](docs/customer-evaluation-and-sales.md) covers the other half of the job: what prospects were actually evaluating, what that looked like with real customers, and how a proof of concept moved from a demo to a production decision.
-
-[Running discovery with a customer](docs/discovery-workshops-and-roadmap.md) covers the workshops themselves: getting in early with a prospect, mapping their current state, stakeholders, and constraints, choosing what to land first, and setting success criteria before delivery started.
 
 ## What I bring to a team
 
