@@ -13,7 +13,7 @@ The architecture below is the foundation, but the discovery and sales side of th
 - [Running discovery with a customer](docs/discovery-workshops-and-roadmap.md), the workshops themselves: getting in early with a prospect, mapping their current state, stakeholders, and constraints, choosing what to land first, and setting success criteria before delivery started.
 - [Customer evaluation and sales](docs/customer-evaluation-and-sales.md), what prospects were actually evaluating, what that looked like with real customers, and how a proof of concept moved from a demo to a production decision.
 - [How I ran this](docs/how-i-ran-this.md), the discovery to build sequence on the architecture side, the bar each stage had to clear, and who owned what.
-- [How I lead a client engagement](docs/how-i-lead-an-engagement.md), how I build trust, find the need behind the ask, keep customers and leadership informed, and avoid over-promising.
+- [How I lead a client engagement](docs/how-i-lead-an-engagement.md), the hats I wore as the technical lead on customer work, how I build trust, find the need behind the ask, keep customers and leadership informed, and avoid over-promising.
 
 The rest of this page is the architecture and build detail those pages reference.
 

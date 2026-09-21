@@ -2,13 +2,24 @@
 
 Across the eighteen months from first build to acquisition, most of my time went into customer work: prospects, proofs of concept, and production rollouts. These are the habits I relied on, with what each looked like here.
 
+## The hats I wore
+
+I led the technical side of customer engagements and moved between roles depending on what an account needed that week.
+
+- **Discovery lead.** Sat with merchandisers, data science leads, and buyers to turn vague complaints into requirements a platform could be built against.
+- **Sales engineer.** Ran demos on each customer's real catalog and presented directly to technical and executive owners.
+- **Proof of concept lead.** Set objectives, dates, and deliverables up front, ran the trial, and led the joint review of results, as with Kueski.
+- **Product owner.** Owned the product definition and the build sequence, with a bar each stage had to clear.
+- **Architect.** Owned the reference architecture and the cost and speed tradeoffs, and pushed for the provider abstraction and index versioning before the first production customer.
+- **Go to market partner.** Helped shape how the product was positioned for different verticals, from fashion to lending, and treated budget, procurement, and security as part of closing the deal.
+
 ## Earning trust early and finding who matters
 
 In every account I worked out quickly who actually decided. Usually it was a mix of the data science or machine learning lead, the merchandising or product owner who felt the pain, and whoever controlled budget, security, and procurement. I presented directly to the technical and executive owners instead of through intermediaries, and I learned what success meant to each in their own terms. Fashion buyers talked about conversion rate, order value, and cost to acquire a customer. Lending buyers talked about application completion and approval volume.
 
 ## Hearing the need behind the ask
 
-A merchandiser rarely said "search is broken." They said a type of product came back in the wrong category, or a shopper's intent did not match anything in the catalog. The ask was better search. The need was fewer lost sales on specific queries they could name. With Kueski, a consumer lending platform, the ask sounded like a relevance test, but what they needed was proof of an effect on conversion and application volume. I built the proof of concept around that instead.
+A merchandiser rarely said "search is broken." They said a type of product came back in the wrong category, or a shopper's intent did not match anything in the catalog. The ask was better search. The need was fewer lost sales on specific queries they could name. With Kueski, a consumer lending platform, the ask sounded like a relevance test, but what they needed was proof of an effect on conversion and application volume. I proposed a different proof of concept than the one they asked for, built around conversion and application volume, and that is the version they valued once they saw it.
 
 ## Using early demos to learn the domain
 
